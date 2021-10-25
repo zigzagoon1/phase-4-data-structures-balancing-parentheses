@@ -1,7 +1,7 @@
 describe '#balancing_parentheses' do
 
   it "takes a string as an argument" do
-    expect{ balancing_parentheses("()") }.not_to raise_error
+    expect { balancing_parentheses("()") }.not_to raise_error
   end
 
   # it "uses an instance of MyStack in the solution" do
