@@ -4,9 +4,11 @@ describe '#balancing_parentheses' do
     expect { balancing_parentheses("()") }.not_to raise_error
   end
 
-  # it "uses an instance of MyStack in the solution" do
-  #   is there any way to do this?
-  # end
+  it "uses an instance of the Stack class in the solution" do
+    allow(Stack).to receive(:new)
+    balancing_parentheses("()")
+    expect(Stack).to have_received(:new)
+  end
 
   it 'can balance parentheses when only one type of parenthesis is in the string' do
     expect(balancing_parentheses(')')).to eq(1)
