@@ -5,7 +5,7 @@ describe '#balancing_parentheses' do
   end
 
   it "uses an instance of the Stack class in the solution" do
-    allow(Stack).to receive(:new)
+    allow(Stack).to receive(:new).and_return(Stack.new)
     balancing_parentheses("()")
     expect(Stack).to have_received(:new)
   end
