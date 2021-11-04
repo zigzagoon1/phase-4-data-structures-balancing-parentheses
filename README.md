@@ -16,8 +16,8 @@ parenthesis followed by a matching closing parenthesis. A string containing some
 number of `(` and `)` characters will be considered balanced if it includes only
 balanced pairs:
 
-Balanced: `()`, `(()())`
-Not balanced: `())()`, `)`
+- Balanced: `()`, `(()())`
+- Not balanced: `())()`, `)`
 
 You will be using the `Stack` implementation we developed in an earlier lesson
 to help you solve this lab. We have included the code in `lib/stack.rb`. We have
@@ -29,12 +29,15 @@ coding your solution.
 Write a `balancing_parentheses` method in the `lib/balancing_parentheses.rb`
 file that:
 
-1. Takes as input a string consisting of some number of `(` and `)` characters,
-2. Creates an instance of the `Stack` class,
+1. Takes as input a string consisting of some number of `(` and `)` characters
+2. Creates an instance of the `Stack` class
 3. Using the stack, checks the string to determine whether the parentheses
-   inside it are balanced, and
+   inside it are balanced
 4. Returns the number of additional parentheses that would need to be added to
    the string to make it balanced
+
+Here are some examples of the expected return value for your method for various
+inputs:
 
 ```text
 Input: `()`
