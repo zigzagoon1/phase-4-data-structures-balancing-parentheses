@@ -47,7 +47,7 @@ Input: `())()`
 Output: 1
 
 Input: `(()()(()`
-Output: 0
+Output: 2
 ```
 
 Note: There are a number of ways to solve this problem, but for this lab you
